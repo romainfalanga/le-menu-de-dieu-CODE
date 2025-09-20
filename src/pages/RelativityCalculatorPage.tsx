@@ -139,8 +139,8 @@ export const RelativityCalculatorPage: React.FC = () => {
       <div className="container mx-auto px-2 sm:px-4 lg:px-6 py-2 sm:py-4 lg:py-6 relative z-10 max-w-full pt-16 sm:pt-20">
         {/* En-tête */}
         <header className="text-center mb-2 sm:mb-4 lg:mb-6">
-              <h1 className="text-3xl sm:text-4xl lg:text-5xl xl:text-6xl font-bold relative z-10 bg-gradient-to-r from-white via-blue-200 via-purple-200 via-pink-200 to-cyan-200 bg-clip-text text-transparent animate-gradient-shift bg-[length:400%_400%]">
         <div className="space-y-6 sm:space-y-4 lg:space-y-6">
+          <h1 className="text-3xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-bold mb-4 sm:mb-2 lg:mb-3 px-2 drop-shadow-lg relative">
             <div className="relative inline-block">
               {/* Ondes gravitationnelles en arrière-plan */}
               <div className="absolute inset-0 -z-10 bg-gradient-to-r from-blue-600/20 via-purple-600/20 to-pink-600/20 blur-xl animate-wave-1"></div>
@@ -162,8 +162,6 @@ export const RelativityCalculatorPage: React.FC = () => {
               <span className="relative z-10 bg-gradient-to-r from-white via-blue-200 via-purple-200 via-pink-200 to-cyan-200 bg-clip-text text-transparent animate-gradient-shift bg-[length:400%_400%]">
                 Relativité Restreinte
               </span>
-            </div>
-              </h1>
               
               {/* Effet de scan lumineux */}
               <div className="absolute inset-0 -z-5 bg-gradient-to-r from-transparent via-white/20 to-transparent -skew-x-12 animate-light-scan"></div>
@@ -189,6 +187,7 @@ export const RelativityCalculatorPage: React.FC = () => {
               {/* Lueur externe */}
               <div className="absolute inset-0 rounded-full border border-purple-400/0 hover:border-purple-400/20 scale-100 hover:scale-200 transition-all duration-3000 animate-pulse animation-delay-300"></div>
             </div>
+          </h1>
           <p className="text-sm sm:text-sm lg:text-base text-blue-200/90 max-w-3xl mx-auto px-2 sm:px-4 leading-relaxed mt-2">
           </p>
         </header>
@@ -240,3 +239,5 @@ export const RelativityCalculatorPage: React.FC = () => {
     </div>
   );
 };
+  )
+}
