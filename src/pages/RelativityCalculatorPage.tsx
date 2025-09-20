@@ -238,3 +238,5 @@ export const RelativityCalculatorPage: React.FC = () => {
     </div>
   );
 };
+  )
+}
