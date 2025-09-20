@@ -136,7 +136,7 @@ export const RelativityCalculatorPage: React.FC = () => {
       <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-blue-900/20 via-transparent to-purple-900/20"></div>
       <div className="absolute inset-0 bg-[linear-gradient(45deg,transparent_25%,rgba(59,130,246,0.05)_50%,transparent_75%)] bg-[length:60px_60px] animate-pulse"></div>
       
-      <div className="container mx-auto px-2 sm:px-4 lg:px-6 py-2 sm:py-4 lg:py-6 relative z-10 max-w-full pt-16 sm:pt-20">
+      <div className="container mx-auto px-2 sm:px-4 lg:px-6 py-2 sm:py-4 lg:py-6 relative z-10 max-w-full pt-20">
         {/* En-tête */}
         <header className="text-center mb-3 sm:mb-4 lg:mb-6">
           <h1 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-bold bg-gradient-to-r from-white via-blue-200 to-purple-200 bg-clip-text text-transparent mb-1 sm:mb-2 lg:mb-3 px-2 drop-shadow-lg">
