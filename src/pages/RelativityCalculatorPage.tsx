@@ -162,6 +162,7 @@ export const RelativityCalculatorPage: React.FC = () => {
               <span className="relative z-10 bg-gradient-to-r from-white via-blue-200 via-purple-200 via-pink-200 to-cyan-200 bg-clip-text text-transparent animate-gradient-shift bg-[length:400%_400%]">
                 Relativité Restreinte
               </span>
+            </div>
               </h1>
               
               {/* Effet de scan lumineux */}
@@ -239,5 +240,3 @@ export const RelativityCalculatorPage: React.FC = () => {
     </div>
   );
 };
-  )
-}
