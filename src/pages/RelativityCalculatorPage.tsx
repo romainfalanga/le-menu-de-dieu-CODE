@@ -140,7 +140,6 @@ export const RelativityCalculatorPage: React.FC = () => {
         {/* En-tête */}
         <header className="text-center mb-2 sm:mb-4 lg:mb-6">
         <div className="space-y-6 sm:space-y-4 lg:space-y-6">
-          <h1 className="text-3xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-bold mb-4 sm:mb-2 lg:mb-3 px-2 drop-shadow-lg relative">
             <div className="relative inline-block">
               {/* Ondes gravitationnelles en arrière-plan */}
               <div className="absolute inset-0 -z-10 bg-gradient-to-r from-blue-600/20 via-purple-600/20 to-pink-600/20 blur-xl animate-wave-1"></div>
@@ -239,5 +238,3 @@ export const RelativityCalculatorPage: React.FC = () => {
     </div>
   );
 };
-  )
-}
