@@ -139,67 +139,62 @@ export const RelativityCalculatorPage: React.FC = () => {
       <div className="container mx-auto px-2 sm:px-4 lg:px-6 py-2 sm:py-4 lg:py-6 relative z-10 max-w-full pt-16 sm:pt-20">
         {/* En-tête */}
         <header className="text-center mb-2 sm:mb-4 lg:mb-6">
-          <div className="relative mb-1 sm:mb-2 lg:mb-3 px-2">
-            <div className="absolute inset-0 overflow-hidden">
-              {/* Ondes gravitationnelles */}
-              <div className="absolute inset-0 bg-gradient-to-r from-transparent via-blue-500/10 via-purple-500/10 to-transparent bg-[length:200%_100%] animate-gradient-x"></div>
-              <div className="absolute inset-0 bg-gradient-to-r from-transparent via-cyan-500/5 via-pink-500/5 to-transparent bg-[length:300%_100%] animate-gradient-x animation-delay-500"></div>
+              <h1 className="text-3xl sm:text-4xl lg:text-5xl xl:text-6xl font-bold relative z-10 bg-gradient-to-r from-white via-blue-200 via-purple-200 via-pink-200 to-cyan-200 bg-clip-text text-transparent animate-gradient-shift bg-[length:400%_400%]">
+        <div className="space-y-6 sm:space-y-4 lg:space-y-6">
+            <div className="relative inline-block">
+              {/* Ondes gravitationnelles en arrière-plan */}
+              <div className="absolute inset-0 -z-10 bg-gradient-to-r from-blue-600/20 via-purple-600/20 to-pink-600/20 blur-xl animate-wave-1"></div>
+              <div className="absolute inset-0 -z-10 bg-gradient-to-l from-cyan-500/15 via-blue-500/15 to-purple-500/15 blur-2xl animate-wave-2"></div>
               
               {/* Particules quantiques */}
-              {[...Array(12)].map((_, i) => (
-                <div
-                  key={i}
-                  className="absolute w-1 h-1 bg-blue-400 rounded-full animate-ping opacity-60"
-                  style={{
-                    top: `${Math.random() * 100}%`,
-                    left: `${Math.random() * 100}%`,
-                    animationDelay: `${Math.random() * 3}s`,
-                    animationDuration: `${2 + Math.random() * 2}s`
-                  }}
-                />
-              ))}
+              <div className="absolute -inset-8 -z-10">
+                <div className="absolute top-2 left-4 w-1 h-1 bg-blue-400 rounded-full animate-quantum-1"></div>
+                <div className="absolute top-8 right-6 w-1 h-1 bg-purple-400 rounded-full animate-quantum-2"></div>
+                <div className="absolute bottom-4 left-8 w-1 h-1 bg-cyan-400 rounded-full animate-quantum-3"></div>
+                <div className="absolute bottom-2 right-4 w-1 h-1 bg-pink-400 rounded-full animate-quantum-4"></div>
+                <div className="absolute top-6 left-12 w-1 h-1 bg-indigo-400 rounded-full animate-quantum-5"></div>
+              </div>
+              
+              {/* Effet de dilatation temporelle */}
+              <div className="absolute inset-0 -z-10 bg-gradient-to-r from-transparent via-white/5 to-transparent blur-sm scale-110 animate-time-dilation"></div>
+              
+              {/* Texte principal avec gradient animé */}
+              <span className="relative z-10 bg-gradient-to-r from-white via-blue-200 via-purple-200 via-pink-200 to-cyan-200 bg-clip-text text-transparent animate-gradient-shift bg-[length:400%_400%]">
+                Relativité Restreinte
+              </span>
             </div>
-            
-            {/* Titre principal avec effets de relativité */}
-            <h1 className="relative text-3xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-bold">
-              {/* Couche de fond avec effet de dilatation temporelle */}
-              <span className="absolute inset-0 bg-gradient-to-r from-blue-600 via-purple-600 via-cyan-600 to-pink-600 bg-clip-text text-transparent bg-[length:400%_400%] animate-gradient-x opacity-30 blur-sm scale-110">
-                Relativité Restreinte
-              </span>
+              </h1>
               
-              {/* Couche principale avec gradient animé */}
-              <span className="relative z-10 bg-gradient-to-r from-white via-blue-200 via-purple-200 via-cyan-200 to-white bg-clip-text text-transparent bg-[length:500%_500%] animate-gradient-x drop-shadow-[0_0_30px_rgba(59,130,246,0.8)]">
-                Relativité Restreinte
-              </span>
+              {/* Effet de scan lumineux */}
+              <div className="absolute inset-0 -z-5 bg-gradient-to-r from-transparent via-white/20 to-transparent -skew-x-12 animate-light-scan"></div>
               
-              {/* Effet de lueur externe pulsante */}
-              <div className="absolute -inset-4 bg-gradient-to-r from-blue-600/20 via-purple-600/20 via-cyan-600/20 to-pink-600/20 rounded-2xl blur-2xl animate-pulse opacity-60"></div>
+              {/* Reflets cristallins */}
+              <div className="absolute top-0 left-1/4 w-8 h-0.5 bg-gradient-to-r from-transparent via-white/60 to-transparent animate-crystal-1"></div>
+              <div className="absolute bottom-0 right-1/3 w-6 h-0.5 bg-gradient-to-r from-transparent via-blue-300/60 to-transparent animate-crystal-2"></div>
               
-              {/* Effet de scan horizontal (comme une onde lumineuse) */}
-              <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/40 to-transparent opacity-0 animate-scan rounded-2xl"></div>
+              {/* Particules orbitales */}
+              <div className="absolute inset-0 -z-10">
+                <div className="absolute top-1/2 left-1/2 w-2 h-2 -translate-x-1/2 -translate-y-1/2">
+                  <div className="absolute w-1 h-1 bg-blue-400/60 rounded-full animate-orbit-1"></div>
+                  <div className="absolute w-1 h-1 bg-purple-400/60 rounded-full animate-orbit-2"></div>
+                  <div className="absolute w-1 h-1 bg-cyan-400/60 rounded-full animate-orbit-3"></div>
+                </div>
+              </div>
               
-              {/* Reflets cristallins pour simuler la courbure de l'espace-temps */}
-              <div className="absolute top-0 left-1/4 w-1/2 h-1 bg-gradient-to-r from-transparent via-white/90 to-transparent blur-sm opacity-70"></div>
-              <div className="absolute bottom-0 right-1/4 w-1/3 h-1 bg-gradient-to-r from-transparent via-cyan-300/90 to-transparent blur-sm opacity-50"></div>
+              {/* Anneaux énergétiques */}
+              <div className="absolute inset-0 rounded-full border border-blue-400/20 scale-100 hover:scale-110 transition-all duration-1000 animate-pulse"></div>
+              <div className="absolute inset-0 rounded-full border border-purple-400/15 scale-110 hover:scale-125 transition-all duration-1500 animate-pulse animation-delay-500"></div>
+              <div className="absolute inset-0 rounded-full border border-cyan-400/10 scale-125 hover:scale-140 transition-all duration-2000 animate-pulse animation-delay-1000"></div>
               
-              {/* Particules orbitales autour du titre */}
-              <div className="absolute -top-2 -right-2 w-3 h-3 bg-blue-400 rounded-full animate-ping opacity-80"></div>
-              <div className="absolute -bottom-2 -left-2 w-3 h-3 bg-purple-400 rounded-full animate-ping opacity-80 animation-delay-300"></div>
-              <div className="absolute -top-2 -left-2 w-2 h-2 bg-cyan-400 rounded-full animate-ping opacity-70 animation-delay-500"></div>
-              <div className="absolute -bottom-2 -right-2 w-2 h-2 bg-pink-400 rounded-full animate-ping opacity-70 animation-delay-700"></div>
-              
-              {/* Anneaux énergétiques qui s'étendent (effet de dilatation) */}
-              <div className="absolute inset-0 rounded-full border-2 border-blue-400/0 hover:border-blue-400/30 scale-100 hover:scale-150 transition-all duration-2000 animate-pulse"></div>
+              {/* Lueur externe */}
               <div className="absolute inset-0 rounded-full border border-purple-400/0 hover:border-purple-400/20 scale-100 hover:scale-200 transition-all duration-3000 animate-pulse animation-delay-300"></div>
-            </h1>
-          </div>
-          <p className="text-xs sm:text-sm lg:text-base text-blue-200/90 max-w-3xl mx-auto px-2 sm:px-4 leading-relaxed mt-1">
-            Explorez la relation entre vitesse et dilatation du temps selon Einstein
+            </div>
+          <p className="text-sm sm:text-sm lg:text-base text-blue-200/90 max-w-3xl mx-auto px-2 sm:px-4 leading-relaxed mt-2">
           </p>
         </header>
 
         {/* Contenu principal */}
-        <div className="space-y-3 sm:space-y-4 lg:space-y-6">
+        <div className="space-y-6 sm:space-y-4 lg:space-y-6">
           {/* Panneau de contrôle - toujours en premier sur mobile */}
           <div className="w-full max-w-4xl mx-auto">
             <ControlPanel
