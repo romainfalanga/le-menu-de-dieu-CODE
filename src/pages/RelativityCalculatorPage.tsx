@@ -139,9 +139,7 @@ export const RelativityCalculatorPage: React.FC = () => {
       <div className="container mx-auto px-2 sm:px-4 lg:px-6 py-2 sm:py-4 lg:py-6 relative z-10 max-w-full pt-16 sm:pt-20">
         {/* En-tête */}
         <header className="text-center mb-2 sm:mb-4 lg:mb-6">
-          <p className="text-sm sm:text-sm lg:text-base text-blue-200/90 max-w-3xl mx-auto px-2 sm:px-4 leading-relaxed mt-2">
           <div className="relative mb-1 sm:mb-2 lg:mb-3 px-2">
-        <header className="text-center mb-4 sm:mb-3 lg:mb-6">
             <div className="absolute inset-0 overflow-hidden">
               {/* Ondes gravitationnelles */}
               <div className="absolute inset-0 bg-gradient-to-r from-transparent via-blue-500/10 via-purple-500/10 to-transparent bg-[length:200%_100%] animate-gradient-x"></div>
