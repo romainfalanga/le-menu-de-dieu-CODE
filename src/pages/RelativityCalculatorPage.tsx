@@ -139,8 +139,57 @@ export const RelativityCalculatorPage: React.FC = () => {
       <div className="container mx-auto px-2 sm:px-4 lg:px-6 py-2 sm:py-4 lg:py-6 relative z-10 max-w-full pt-16 sm:pt-20">
         {/* En-tête */}
         <header className="text-center mb-2 sm:mb-4 lg:mb-6">
-            Explorez la relation entre vitesse et dilatation du temps selon Einstein
-        <header className="text-center mb-4 sm:mb-3 lg:mb-6 -mt-12 sm:mt-0">
+          <h1 className="text-3xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-bold mb-4 sm:mb-2 lg:mb-3 px-2 drop-shadow-lg relative">
+            <div className="relative inline-block">
+              {/* Ondes gravitationnelles en arrière-plan */}
+              <div className="absolute inset-0 -z-10 bg-gradient-to-r from-blue-600/20 via-purple-600/20 to-pink-600/20 blur-xl animate-wave-1"></div>
+              <div className="absolute inset-0 -z-10 bg-gradient-to-l from-cyan-500/15 via-blue-500/15 to-purple-500/15 blur-2xl animate-wave-2"></div>
+              
+              {/* Particules quantiques */}
+              <div className="absolute -inset-8 -z-10">
+                <div className="absolute top-2 left-4 w-1 h-1 bg-blue-400 rounded-full animate-quantum-1"></div>
+                <div className="absolute top-8 right-6 w-1 h-1 bg-purple-400 rounded-full animate-quantum-2"></div>
+                <div className="absolute bottom-4 left-8 w-1 h-1 bg-cyan-400 rounded-full animate-quantum-3"></div>
+                <div className="absolute bottom-2 right-4 w-1 h-1 bg-pink-400 rounded-full animate-quantum-4"></div>
+                <div className="absolute top-6 left-12 w-1 h-1 bg-indigo-400 rounded-full animate-quantum-5"></div>
+              </div>
+              
+              {/* Effet de dilatation temporelle */}
+              <div className="absolute inset-0 -z-10 bg-gradient-to-r from-transparent via-white/5 to-transparent blur-sm scale-110 animate-time-dilation"></div>
+              
+              {/* Texte principal avec gradient animé */}
+              <span className="relative z-10 bg-gradient-to-r from-white via-blue-200 via-purple-200 via-pink-200 to-cyan-200 bg-clip-text text-transparent animate-gradient-shift bg-[length:400%_400%]">
+                Relativité Restreinte
+              </span>
+              
+              {/* Effet de scan lumineux */}
+              <div className="absolute inset-0 -z-5 bg-gradient-to-r from-transparent via-white/20 to-transparent -skew-x-12 animate-light-scan"></div>
+              
+              {/* Reflets cristallins */}
+              <div className="absolute top-0 left-1/4 w-8 h-0.5 bg-gradient-to-r from-transparent via-white/60 to-transparent animate-crystal-1"></div>
+              <div className="absolute bottom-0 right-1/3 w-6 h-0.5 bg-gradient-to-r from-transparent via-blue-300/60 to-transparent animate-crystal-2"></div>
+              
+              {/* Particules orbitales */}
+              <div className="absolute inset-0 -z-10">
+                <div className="absolute top-1/2 left-1/2 w-2 h-2 -translate-x-1/2 -translate-y-1/2">
+                  <div className="absolute w-1 h-1 bg-blue-400/60 rounded-full animate-orbit-1"></div>
+                  <div className="absolute w-1 h-1 bg-purple-400/60 rounded-full animate-orbit-2"></div>
+                  <div className="absolute w-1 h-1 bg-cyan-400/60 rounded-full animate-orbit-3"></div>
+                </div>
+              </div>
+              
+              {/* Anneaux énergétiques */}
+              <div className="absolute inset-0 rounded-full border border-blue-400/20 scale-100 hover:scale-110 transition-all duration-1000 animate-pulse"></div>
+              <div className="absolute inset-0 rounded-full border border-purple-400/15 scale-110 hover:scale-125 transition-all duration-1500 animate-pulse animation-delay-500"></div>
+              <div className="absolute inset-0 rounded-full border border-cyan-400/10 scale-125 hover:scale-140 transition-all duration-2000 animate-pulse animation-delay-1000"></div>
+              
+              {/* Lueur externe */}
+              <div className="absolute inset-0 rounded-full border border-purple-400/0 hover:border-purple-400/20 scale-100 hover:scale-200 transition-all duration-3000 animate-pulse animation-delay-300"></div>
+            </div>
+          </h1>
+          <p className="text-sm sm:text-sm lg:text-base text-blue-200/90 max-w-3xl mx-auto px-2 sm:px-4 leading-relaxed mt-2">
+          </p>
+        </header>
 
         {/* Contenu principal */}
         <div className="space-y-3 sm:space-y-4 lg:space-y-6">
@@ -189,5 +238,3 @@ export const RelativityCalculatorPage: React.FC = () => {
     </div>
   );
 };
-  )
-}
