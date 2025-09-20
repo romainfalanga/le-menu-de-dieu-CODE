@@ -13,11 +13,11 @@ export const BlackHoleConceptPage: React.FC = () => {
     <div className="min-h-screen bg-gradient-to-br from-gray-900 via-purple-900 to-black">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-4 sm:py-6 lg:py-8 pt-16 sm:pt-20">
         {/* En-tête */}
-        <header className="text-center mb-6 sm:mb-8 lg:mb-12">
+        <header className="text-center mb-3 sm:mb-8 lg:mb-12">
           <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-3 sm:mb-4 px-2">
             Horizon des Événements
           </h1>
-          <p className="text-base sm:text-lg lg:text-xl text-purple-200 max-w-4xl mx-auto px-4">
+          <p className="text-base sm:text-lg lg:text-xl text-purple-200 max-w-4xl mx-auto px-4 mt-1">
             Découvrez comment l'espace et le temps échangent leurs rôles au passage de l'horizon des événements
           </p>
         </header>
